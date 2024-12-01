@@ -1,0 +1,23 @@
+---
+- name: Install and start Apache
+  hosts: all
+  become: true
+  tasks:
+    - name: Ensure Apache is installed
+      ansible.builtin.yum:
+        name: httpd
+        state: present
+      when: ansible_os_family == "RedHat"
+    
+    - name: Ensure Apache is installed (Debian/Ubuntu)
+      ansible.builtin.apt:
+        name: apache2
+        state: present
+        update_cache: yes
+      when: ansible_os_family == "Debian"
+
+    - name: Ensure Apache service is started and enabled
+      ansible.builtin.service:
+        name: "{{ 'httpd' if ansible_os_family == 'RedHat' else 'apache2' }}"
+        state: started
+        enabled: yes

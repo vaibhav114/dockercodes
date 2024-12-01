@@ -1,0 +1,61 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1468.vcf4f5ee92395">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2218.v56d0cda_37c72"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2218.v56d0cda_37c72">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@3996.va_f5c1799f978">
+    <script>pipeline {
+    agent any
+
+    environment {
+        DOCKER_IMAGE = &apos;nginx&apos;
+        CONTAINER_NAME = &apos;nginx-container&apos;
+    }
+
+    stages {
+        stage(&apos;Pull Nginx Docker Image&apos;) {
+            steps {
+                script {
+                    // Pull the Nginx image from Docker Hub (Linux/Mac equivalent)
+                    sh &apos;docker pull $DOCKER_IMAGE&apos;
+                }
+            }
+        }
+
+        stage(&apos;Run Docker Container&apos;) {
+            steps {
+                script {
+                    // Run the Nginx container (Linux/Mac equivalent)
+                    sh &apos;docker run -d --name $CONTAINER_NAME -p 80:80 $DOCKER_IMAGE&apos;
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            echo &apos;Pipeline finished.&apos;
+        }
+        success {
+            echo &apos;Deployment succeeded.&apos;
+        }
+        failure {
+            echo &apos;Deployment failed.&apos;
+        }
+    }
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>
