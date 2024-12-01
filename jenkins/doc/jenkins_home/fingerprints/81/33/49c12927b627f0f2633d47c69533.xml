@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2024-12-01 14:42:38.737 UTC</timestamp>
+  <md5sum>813349c12927b627f0f2633d47c69533</md5sum>
+  <fileName>Credential id=SONAR_TOKEN name=SONAR_TOKEN</fileName>
+  <usages>
+    <entry>
+      <string>sonartest</string>
+      <ranges>2</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

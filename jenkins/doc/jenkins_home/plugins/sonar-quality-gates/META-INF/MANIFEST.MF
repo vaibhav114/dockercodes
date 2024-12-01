@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: Sonar Quality Gates Plugin
+Specification-Version: 0.0
+Implementation-Title: Sonar Quality Gates Plugin
+Implementation-Version: 328.vf4369b_da_d3c2
+Group-Id: org.jenkins-ci.plugins
+Artifact-Id: sonar-quality-gates
+Short-Name: sonar-quality-gates
+Long-Name: Sonar Quality Gates Plugin
+Url: https://github.com/jenkinsci/sonar-quality-gates-plugin
+Plugin-Version: 328.vf4369b_da_d3c2
+Hudson-Version: 2.440.3
+Jenkins-Version: 2.440.3
+Plugin-Dependencies: gson-api:2.11.0-41.v019fcf6125dc,json-api:20240303-
+ 41.v94e11e6de726,apache-httpcomponents-client-4-api:4.5.14-208.v4383519
+ 42757,structs:338.v848422169819
+Plugin-Developers: Rafael Ramos de Oliveira:arkanjoms:arkanjo.ms@gmail.c
+ om
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/license/mit/
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/sonar-quality
+ -gates-plugin
+Plugin-ScmTag: f4369bdad3c2d1704fc2159c05ab7bbeb44bda9d
+Plugin-ScmUrl: https://github.com/jenkinsci/sonar-quality-gates-plugin
+Plugin-GitHash: f4369bdad3c2d1704fc2159c05ab7bbeb44bda9d
+Implementation-Build: f4369bdad3c2d1704fc2159c05ab7bbeb44bda9d
+

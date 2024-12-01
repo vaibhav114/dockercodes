@@ -1,0 +1,291 @@
+Started by user [8mha:////4KCaKuv8TLt/RGca6MWTBjGV72FYdBZMTXj22lZFH6x3AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ssonarfinal
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/vaibhav114/SonarJenkins.git
+ > git init /var/jenkins_home/workspace/ssonarfinal # timeout=10
+Fetching upstream changes from https://github.com/vaibhav114/SonarJenkins.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.5'
+ > git fetch --tags --force --progress -- https://github.com/vaibhav114/SonarJenkins.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/vaibhav114/SonarJenkins.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision bd2fd9fc9a6e167c194540c92fe46440e261cfc3 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f bd2fd9fc9a6e167c194540c92fe46440e261cfc3 # timeout=10
+Commit message: "sdffdvfd"
+First time build. Skipping changelog.
+[ssonarfinal] $ /var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/test1/bin/sonar-scanner -Dsonar.host.url=https://sonarcloud.io ******** -Dsonar.projectKey=vaibhav114_SonarJenkins -Dsonar.organization=vaibhav114 -Dsonar.projectBaseDir=/var/jenkins_home/workspace/ssonarfinal
+17:59:28.151 INFO  Scanner configuration file: /var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/test1/conf/sonar-scanner.properties
+17:59:28.181 INFO  Project root configuration file: /var/jenkins_home/workspace/ssonarfinal/sonar-project.properties
+17:59:28.241 INFO  SonarScanner CLI 6.2.1.4610
+17:59:28.247 INFO  Java 17.0.13 Eclipse Adoptium (64-bit)
+17:59:28.248 INFO  Linux 5.15.153.1-microsoft-standard-WSL2 amd64
+17:59:28.354 INFO  User cache: /root/.sonar/cache
+17:59:29.810 INFO  JRE provisioning: os[linux], arch[x86_64]
+17:59:50.161 INFO  Communicating with SonarCloud
+17:59:51.040 INFO  Starting SonarScanner Engine...
+17:59:51.042 INFO  Java 17.0.11 Eclipse Adoptium (64-bit)
+17:59:53.541 INFO  Load global settings
+17:59:54.596 INFO  Load global settings (done) | time=1056ms
+17:59:54.603 INFO  Server id: 1BD809FA-AWHW8ct9-T_TB3XqouNu
+17:59:54.813 INFO  Loading required plugins
+17:59:54.814 INFO  Load plugins index
+17:59:55.248 INFO  Load plugins index (done) | time=434ms
+17:59:55.249 INFO  Load/download plugins
+18:00:02.564 INFO  Load/download plugins (done) | time=7316ms
+18:00:03.391 INFO  Found an active CI vendor: 'Jenkins'
+18:00:03.403 INFO  Load project settings for component key: 'vaibhav114_SonarJenkins'
+18:00:03.584 INFO  Load project settings for component key: 'vaibhav114_SonarJenkins' (done) | time=180ms
+18:00:03.593 INFO  Process project properties
+18:00:03.596 INFO  Project key: vaibhav114_SonarJenkins
+18:00:03.598 INFO  Base dir: /var/jenkins_home/workspace/ssonarfinal
+18:00:03.599 INFO  Working dir: /var/jenkins_home/workspace/ssonarfinal/.scannerwork
+18:00:03.614 INFO  Load project branches
+18:00:03.831 INFO  Load project branches (done) | time=217ms
+18:00:03.833 INFO  Check ALM binding of project 'vaibhav114_SonarJenkins'
+18:00:03.989 INFO  Detected project binding: BOUND
+18:00:03.990 INFO  Check ALM binding of project 'vaibhav114_SonarJenkins' (done) | time=157ms
+18:00:03.991 INFO  Load project pull requests
+18:00:04.179 INFO  Load project pull requests (done) | time=187ms
+18:00:04.183 INFO  Load branch configuration
+18:00:04.188 INFO  Load branch configuration (done) | time=4ms
+18:00:04.200 INFO  Load quality profiles
+18:00:04.457 INFO  Load quality profiles (done) | time=258ms
+18:00:04.463 INFO  Load active rules
+18:00:22.060 INFO  Load active rules (done) | time=17597ms
+18:00:22.532 INFO  Organization key: vaibhav114
+18:00:22.555 INFO  Preprocessing files...
+18:00:22.804 INFO  1 language detected in 3 preprocessed files
+18:00:22.804 INFO  0 files ignored because of inclusion/exclusion patterns
+18:00:22.805 INFO  0 files ignored because of scm ignore settings
+18:00:22.814 INFO  Loading plugins for detected languages
+18:00:22.815 INFO  Load/download plugins
+18:00:30.412 INFO  Load/download plugins (done) | time=7597ms
+18:00:30.693 INFO  Load project repositories
+18:00:31.154 INFO  Load project repositories (done) | time=461ms
+18:00:31.160 INFO  Indexing files...
+18:00:31.160 INFO  Project configuration:
+18:00:31.161 INFO    Excluded sources: **/build-wrapper-dump.json
+18:00:31.178 INFO  3 files indexed
+18:00:31.185 INFO  Quality profile for py: Sonar way
+18:00:31.185 INFO  ------------- Run sensors on module vaibhav114_SonarJenkins
+18:00:31.274 INFO  Load metrics repository
+18:00:31.452 INFO  Load metrics repository (done) | time=178ms
+18:00:31.459 INFO  Sensor cache enabled
+18:00:31.637 INFO  Load sensor cache
+18:00:33.290 INFO  Load sensor cache (9 KB) | time=1652ms
+18:00:34.820 INFO  Sensor Python Sensor [python]
+18:00:34.827 WARN  Your code is analyzed as compatible with all Python 3 versions by default. You can get a more precise analysis by setting the exact Python version in your configuration via the parameter "sonar.python.version"
+18:00:34.952 INFO  Starting global symbols computation
+18:00:34.963 INFO  1 source file to be analyzed
+18:00:35.809 INFO  1/1 source file has been analyzed
+18:00:35.883 INFO  Starting rules execution
+18:00:35.884 INFO  1 source file to be analyzed
+18:00:45.885 INFO  0/1 files analyzed, current file: app.py
+18:00:45.893 INFO  1/1 source file has been analyzed
+18:00:45.894 INFO  The Python analyzer was able to leverage cached data from previous analyses for 0 out of 1 files. These files were not parsed.
+18:00:45.894 INFO  Sensor Python Sensor [python] (done) | time=11073ms
+18:00:45.894 INFO  Sensor Cobertura Sensor for Python coverage [python]
+18:00:48.325 INFO  Sensor Cobertura Sensor for Python coverage [python] (done) | time=2431ms
+18:00:48.326 INFO  Sensor PythonXUnitSensor [python]
+18:00:50.727 INFO  Sensor PythonXUnitSensor [python] (done) | time=2400ms
+18:00:50.728 INFO  Sensor Python HTML templates processing [securitypythonfrontend]
+18:00:52.003 INFO  Sensor Python HTML templates processing [securitypythonfrontend] (done) | time=1276ms
+18:00:52.004 INFO  Sensor JaCoCo XML Report Importer [jacoco]
+18:00:52.005 INFO  'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+18:00:52.007 INFO  No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+18:00:52.007 INFO  Sensor JaCoCo XML Report Importer [jacoco] (done) | time=3ms
+18:00:52.007 INFO  Sensor Java Config Sensor [iac]
+18:00:52.038 INFO  0 source files to be analyzed
+18:00:52.038 INFO  0/0 source files have been analyzed
+18:00:52.038 INFO  Sensor Java Config Sensor [iac] (done) | time=30ms
+18:00:52.039 INFO  Sensor IaC Docker Sensor [iac]
+18:00:52.178 INFO  0 source files to be analyzed
+18:00:52.179 INFO  0/0 source files have been analyzed
+18:00:52.179 INFO  Sensor IaC Docker Sensor [iac] (done) | time=140ms
+18:00:52.180 INFO  Sensor Serverless configuration file sensor [security]
+18:00:52.180 INFO  0 Serverless function entries were found in the project
+18:00:52.191 INFO  0 Serverless function handlers were kept as entrypoints
+18:00:52.191 INFO  Sensor Serverless configuration file sensor [security] (done) | time=12ms
+18:00:52.192 INFO  Sensor AWS SAM template file sensor [security]
+18:00:52.193 INFO  Sensor AWS SAM template file sensor [security] (done) | time=1ms
+18:00:52.193 INFO  Sensor AWS SAM Inline template file sensor [security]
+18:00:52.194 INFO  Sensor AWS SAM Inline template file sensor [security] (done) | time=1ms
+18:00:52.195 INFO  Sensor EnterpriseTextAndSecretsSensor [textenterprise]
+18:00:52.195 INFO  Available processors: 16
+18:00:52.195 INFO  Using 16 threads for analysis.
+18:00:53.784 INFO  The property "sonar.tests" is not set. To improve the analysis accuracy, we categorize a file as a test file if any of the following is true:
+  * The filename starts with "test"
+  * The filename contains "test." or "tests."
+  * Any directory in the file path is named: "doc", "docs", "test" or "tests"
+  * Any directory in the file path has a name ending in "test" or "tests"
+
+18:00:54.508 INFO  Using git CLI to retrieve untracked files
+18:00:54.776 INFO  Analyzing language associated files and files included via "sonar.text.inclusions" that are tracked by git
+18:00:54.868 INFO  2 source files to be analyzed
+18:00:55.036 INFO  2/2 source files have been analyzed
+18:00:55.038 INFO  Sensor EnterpriseTextAndSecretsSensor [textenterprise] (done) | time=2843ms
+18:00:55.039 INFO  Sensor javabugs [dbd]
+18:00:55.042 INFO  Reading IR files from: /var/jenkins_home/workspace/ssonarfinal/.scannerwork/ir/java
+18:00:55.043 INFO  No IR files have been included for analysis.
+18:00:55.043 INFO  Sensor javabugs [dbd] (done) | time=4ms
+18:00:55.043 INFO  Sensor pythonbugs [dbd]
+18:00:55.328 INFO  Reading IR files from: /var/jenkins_home/workspace/ssonarfinal/.scannerwork/ir/python
+18:00:55.478 INFO  Analyzing 34 functions to detect bugs.
+18:00:56.104 INFO  Sensor pythonbugs [dbd] (done) | time=1060ms
+18:00:56.104 INFO  Sensor JavaSecuritySensor [security]
+18:00:56.115 INFO  Enabled taint analysis rules: S2076, S2078, S2083, S2091, S2631, S3649, S5131, S5135, S5144, S5145, S5146, S5147, S5334, S5496, S5883, S6096, S6173, S6287, S6350, S6384, S6390, S6398, S6399, S6547, S6549, S7044
+18:00:56.116 INFO  Load type hierarchy and UCFGs: Starting
+18:00:56.116 INFO  Load type hierarchy: Starting
+18:00:56.117 INFO  Reading type hierarchy from: /var/jenkins_home/workspace/ssonarfinal/.scannerwork/ucfg2/java
+18:00:56.117 INFO  Read 0 type definitions
+18:00:56.121 INFO  Load type hierarchy: Time spent was 00:00:00.004
+18:00:56.122 INFO  Load UCFGs: Starting
+18:00:56.123 INFO  Load UCFGs: Time spent was 00:00:00.001
+18:00:56.123 INFO  Load type hierarchy and UCFGs: Time spent was 00:00:00.006
+18:00:56.124 INFO  No UCFGs have been included for analysis.
+18:00:56.183 INFO  java security sensor: Time spent was 00:00:00.071
+18:00:56.184 INFO  java security sensor: Begin: 2024-12-01T18:00:56.110605102Z, End: 2024-12-01T18:00:56.182473262Z, Duration: 00:00:00.071
+  Load type hierarchy and UCFGs: Begin: 2024-12-01T18:00:56.116118705Z, End: 2024-12-01T18:00:56.122843551Z, Duration: 00:00:00.006
+    Load type hierarchy: Begin: 2024-12-01T18:00:56.116290178Z, End: 2024-12-01T18:00:56.120412327Z, Duration: 00:00:00.004
+    Load UCFGs: Begin: 2024-12-01T18:00:56.121412801Z, End: 2024-12-01T18:00:56.122544901Z, Duration: 00:00:00.001
+18:00:56.185 INFO  java security sensor peak memory: 120 MB
+18:00:56.187 INFO  Sensor JavaSecuritySensor [security] (done) | time=84ms
+18:00:56.188 INFO  Sensor CSharpSecuritySensor [security]
+18:00:56.188 INFO  Enabled taint analysis rules: S2076, S2078, S2083, S2091, S2631, S3649, S5131, S5135, S5144, S5145, S5146, S5147, S5334, S5883, S6096, S6173, S6287, S6350, S6399, S6547, S6549, S6639, S6641, S6680, S6776, S7044
+18:00:56.189 INFO  Load type hierarchy and UCFGs: Starting
+18:00:56.189 INFO  Load type hierarchy: Starting
+18:00:56.190 INFO  Reading type hierarchy from: /var/jenkins_home/workspace/ssonarfinal/ucfg2/cs
+18:00:56.190 INFO  Read 0 type definitions
+18:00:56.190 INFO  Load type hierarchy: Time spent was 00:00:00.000
+18:00:56.191 INFO  Load UCFGs: Starting
+18:00:56.191 INFO  Load UCFGs: Time spent was 00:00:00.000
+18:00:56.191 INFO  Load type hierarchy and UCFGs: Time spent was 00:00:00.002
+18:00:56.191 INFO  No UCFGs have been included for analysis.
+18:00:56.191 INFO  csharp security sensor: Time spent was 00:00:00.003
+18:00:56.192 INFO  csharp security sensor: Begin: 2024-12-01T18:00:56.187567941Z, End: 2024-12-01T18:00:56.190978267Z, Duration: 00:00:00.003
+  Load type hierarchy and UCFGs: Begin: 2024-12-01T18:00:56.187885388Z, End: 2024-12-01T18:00:56.189964497Z, Duration: 00:00:00.002
+    Load type hierarchy: Begin: 2024-12-01T18:00:56.187945785Z, End: 2024-12-01T18:00:56.188832407Z, Duration: 00:00:00.000
+    Load UCFGs: Begin: 2024-12-01T18:00:56.189255679Z, End: 2024-12-01T18:00:56.189684023Z, Duration: 00:00:00.000
+18:00:56.192 INFO  csharp security sensor peak memory: 120 MB
+18:00:56.192 INFO  Sensor CSharpSecuritySensor [security] (done) | time=5ms
+18:00:56.192 INFO  Sensor PhpSecuritySensor [security]
+18:00:56.194 INFO  Enabled taint analysis rules: S2076, S2078, S2083, S2091, S2631, S3649, S5131, S5135, S5144, S5145, S5146, S5334, S5335, S5883, S6173, S6287, S6350, S7044
+18:00:56.194 INFO  Load type hierarchy and UCFGs: Starting
+18:00:56.194 INFO  Load type hierarchy: Starting
+18:00:56.194 INFO  Reading type hierarchy from: /var/jenkins_home/workspace/ssonarfinal/.scannerwork/ucfg2/php
+18:00:56.195 INFO  Read 0 type definitions
+18:00:56.195 INFO  Load type hierarchy: Time spent was 00:00:00.001
+18:00:56.196 INFO  Load UCFGs: Starting
+18:00:56.197 INFO  Load UCFGs: Time spent was 00:00:00.001
+18:00:56.197 INFO  Load type hierarchy and UCFGs: Time spent was 00:00:00.003
+18:00:56.197 INFO  No UCFGs have been included for analysis.
+18:00:56.198 INFO  php security sensor: Time spent was 00:00:00.004
+18:00:56.199 INFO  php security sensor: Begin: 2024-12-01T18:00:56.193461571Z, End: 2024-12-01T18:00:56.198094944Z, Duration: 00:00:00.004
+  Load type hierarchy and UCFGs: Begin: 2024-12-01T18:00:56.193815288Z, End: 2024-12-01T18:00:56.197165498Z, Duration: 00:00:00.003
+    Load type hierarchy: Begin: 2024-12-01T18:00:56.193882960Z, End: 2024-12-01T18:00:56.195463961Z, Duration: 00:00:00.001
+    Load UCFGs: Begin: 2024-12-01T18:00:56.195782630Z, End: 2024-12-01T18:00:56.196821890Z, Duration: 00:00:00.001
+18:00:56.199 INFO  php security sensor peak memory: 121 MB
+18:00:56.200 INFO  Sensor PhpSecuritySensor [security] (done) | time=7ms
+18:00:56.200 INFO  Sensor PythonSecuritySensor [security]
+18:00:56.200 INFO  Enabled taint analysis rules: S2076, S2078, S2083, S2091, S2631, S3649, S5131, S5135, S5144, S5145, S5146, S5147, S5334, S5496, S6287, S6350, S6639, S6680, S6776, S6839, S7044
+18:00:56.200 INFO  Load type hierarchy and UCFGs: Starting
+18:00:56.200 INFO  Load type hierarchy: Starting
+18:00:56.200 INFO  Reading type hierarchy from: /var/jenkins_home/workspace/ssonarfinal/.scannerwork/ucfg2/python
+18:00:58.381 INFO  Read 218 type definitions
+18:00:58.385 INFO  Load type hierarchy: Time spent was 00:00:02.184
+18:00:58.385 INFO  Load UCFGs: Starting
+18:00:58.388 INFO  Reading UCFGs from: /var/jenkins_home/workspace/ssonarfinal/.scannerwork/ucfg2/python
+18:01:07.628 INFO  Load UCFGs: Time spent was 00:00:09.242
+18:01:07.629 INFO  Load type hierarchy and UCFGs: Time spent was 00:00:11.427
+18:01:07.629 INFO  Analyzing 1140 UCFGs to detect vulnerabilities.
+18:01:07.630 INFO  Check cache: Starting
+18:01:07.630 INFO  Load cache: Starting
+18:01:07.630 INFO  Load cache: Time spent was 00:00:00.000
+18:01:07.630 INFO  Check cache: Time spent was 00:00:00.000
+18:01:07.630 INFO  Create runtime call graph: Starting
+18:01:07.630 INFO  Variable Type Analysis #1: Starting
+18:01:07.631 INFO  Create runtime type propagation graph: Starting
+18:01:07.659 INFO  Create runtime type propagation graph: Time spent was 00:00:00.027
+18:01:07.660 INFO  Run SCC (Tarjan) on 2362 nodes: Starting
+18:01:07.687 INFO  Run SCC (Tarjan) on 2362 nodes: Time spent was 00:00:00.026
+18:01:07.687 INFO  Tarjan found 2362 strongly connected components
+18:01:07.687 INFO  Propagate runtime types to strongly connected components: Starting
+18:01:07.715 INFO  Propagate runtime types to strongly connected components: Time spent was 00:00:00.028
+18:01:07.716 INFO  Variable Type Analysis #1: Time spent was 00:00:00.085
+18:01:07.717 INFO  Variable Type Analysis #2: Starting
+18:01:07.718 INFO  Create runtime type propagation graph: Starting
+18:01:07.736 INFO  Create runtime type propagation graph: Time spent was 00:00:00.018
+18:01:07.736 INFO  Run SCC (Tarjan) on 2359 nodes: Starting
+18:01:07.741 INFO  Run SCC (Tarjan) on 2359 nodes: Time spent was 00:00:00.004
+18:01:07.741 INFO  Tarjan found 2359 strongly connected components
+18:01:07.741 INFO  Propagate runtime types to strongly connected components: Starting
+18:01:07.777 INFO  Propagate runtime types to strongly connected components: Time spent was 00:00:00.035
+18:01:07.777 INFO  Variable Type Analysis #2: Time spent was 00:00:00.059
+18:01:07.783 INFO  Create runtime call graph: Time spent was 00:00:00.152
+18:01:07.783 INFO  Load config: Starting
+18:01:08.169 INFO  Load config: Time spent was 00:00:00.384
+18:01:08.170 INFO  Compute entry points: Starting
+18:01:08.259 INFO  Compute entry points: Time spent was 00:00:00.090
+18:01:08.260 INFO  No entry points found.
+18:01:08.260 INFO  python security sensor: Time spent was 00:00:12.059
+18:01:08.261 INFO  python security sensor: Begin: 2024-12-01T18:00:56.199953515Z, End: 2024-12-01T18:01:08.259219170Z, Duration: 00:00:12.059
+  Load type hierarchy and UCFGs: Begin: 2024-12-01T18:00:56.200334395Z, End: 2024-12-01T18:01:07.628267382Z, Duration: 00:00:11.427
+    Load type hierarchy: Begin: 2024-12-01T18:00:56.200391385Z, End: 2024-12-01T18:00:58.384798438Z, Duration: 00:00:02.184
+    Load UCFGs: Begin: 2024-12-01T18:00:58.385057150Z, End: 2024-12-01T18:01:07.627865601Z, Duration: 00:00:09.242
+  Check cache: Begin: 2024-12-01T18:01:07.628468042Z, End: 2024-12-01T18:01:07.629312351Z, Duration: 00:00:00.000
+    Load cache: Begin: 2024-12-01T18:01:07.628523921Z, End: 2024-12-01T18:01:07.628643894Z, Duration: 00:00:00.000
+  Create runtime call graph: Begin: 2024-12-01T18:01:07.629428707Z, End: 2024-12-01T18:01:07.781906250Z, Duration: 00:00:00.152
+    Variable Type Analysis #1: Begin: 2024-12-01T18:01:07.630263580Z, End: 2024-12-01T18:01:07.715369180Z, Duration: 00:00:00.085
+      Create runtime type propagation graph: Begin: 2024-12-01T18:01:07.631282771Z, End: 2024-12-01T18:01:07.659214964Z, Duration: 00:00:00.027
+      Run SCC (Tarjan) on 2362 nodes: Begin: 2024-12-01T18:01:07.659967878Z, End: 2024-12-01T18:01:07.686598447Z, Duration: 00:00:00.026
+      Propagate runtime types to strongly connected components: Begin: 2024-12-01T18:01:07.687021970Z, End: 2024-12-01T18:01:07.715141618Z, Duration: 00:00:00.028
+    Variable Type Analysis #2: Begin: 2024-12-01T18:01:07.717510985Z, End: 2024-12-01T18:01:07.777071511Z, Duration: 00:00:00.059
+      Create runtime type propagation graph: Begin: 2024-12-01T18:01:07.717655065Z, End: 2024-12-01T18:01:07.735841710Z, Duration: 00:00:00.018
+      Run SCC (Tarjan) on 2359 nodes: Begin: 2024-12-01T18:01:07.736108689Z, End: 2024-12-01T18:01:07.740792211Z, Duration: 00:00:00.004
+      Propagate runtime types to strongly connected components: Begin: 2024-12-01T18:01:07.741116852Z, End: 2024-12-01T18:01:07.776812658Z, Duration: 00:00:00.035
+  Load config: Begin: 2024-12-01T18:01:07.782618184Z, End: 2024-12-01T18:01:08.166841856Z, Duration: 00:00:00.384
+  Compute entry points: Begin: 2024-12-01T18:01:08.167286400Z, End: 2024-12-01T18:01:08.258125324Z, Duration: 00:00:00.090
+18:01:08.261 INFO  python security sensor peak memory: 171 MB
+18:01:08.261 INFO  Sensor PythonSecuritySensor [security] (done) | time=12062ms
+18:01:08.262 INFO  Sensor JsSecuritySensor [security]
+18:01:08.262 INFO  Enabled taint analysis rules: S2083, S5696, S5334, S2631, S5883, S5131, S2076, S3649, S6287, S5147, S5146, S6105, S6350, S6096, S5144
+18:01:08.262 INFO  Load type hierarchy and UCFGs: Starting
+18:01:08.262 INFO  Load type hierarchy: Starting
+18:01:08.262 INFO  Reading type hierarchy from: /var/jenkins_home/workspace/ssonarfinal/.scannerwork/ucfg2/js
+18:01:08.263 INFO  Read 0 type definitions
+18:01:08.264 INFO  Load type hierarchy: Time spent was 00:00:00.001
+18:01:08.264 INFO  Load UCFGs: Starting
+18:01:08.266 INFO  Load UCFGs: Time spent was 00:00:00.001
+18:01:08.266 INFO  Load type hierarchy and UCFGs: Time spent was 00:00:00.003
+18:01:08.266 INFO  No UCFGs have been included for analysis.
+18:01:08.267 INFO  js security sensor: Time spent was 00:00:00.004
+18:01:08.267 INFO  js security sensor: Begin: 2024-12-01T18:01:08.261727667Z, End: 2024-12-01T18:01:08.266531951Z, Duration: 00:00:00.004
+  Load type hierarchy and UCFGs: Begin: 2024-12-01T18:01:08.262193242Z, End: 2024-12-01T18:01:08.265724641Z, Duration: 00:00:00.003
+    Load type hierarchy: Begin: 2024-12-01T18:01:08.262244031Z, End: 2024-12-01T18:01:08.263742935Z, Duration: 00:00:00.001
+    Load UCFGs: Begin: 2024-12-01T18:01:08.263962832Z, End: 2024-12-01T18:01:08.265384159Z, Duration: 00:00:00.001
+18:01:08.267 INFO  js security sensor peak memory: 171 MB
+18:01:08.267 INFO  Sensor JsSecuritySensor [security] (done) | time=6ms
+18:01:08.275 INFO  ------------- Run sensors on project
+18:01:08.578 INFO  Sensor Zero Coverage Sensor
+18:01:08.597 INFO  Sensor Zero Coverage Sensor (done) | time=19ms
+18:01:08.614 INFO  CPD Executor Calculating CPD for 1 file
+18:01:08.627 INFO  CPD Executor CPD calculation finished (done) | time=12ms
+18:01:09.082 INFO  Analysis report generated in 360ms, dir size=274 KB
+18:01:09.620 INFO  Analysis report compressed in 533ms, zip size=55 KB
+18:01:10.069 INFO  Analysis report uploaded in 449ms
+18:01:10.075 INFO  ANALYSIS SUCCESSFUL, you can find the results at: https://sonarcloud.io/dashboard?id=vaibhav114_SonarJenkins
+18:01:10.075 INFO  Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+18:01:10.075 INFO  More about the report processing at https://sonarcloud.io/api/ce/task?id=AZODYjF23DB_XtffM360
+18:01:10.972 INFO  Sensor cache published successfully
+18:01:11.057 INFO  Analysis total time: 1:08.035 s
+18:01:11.059 INFO  SonarScanner Engine completed successfully
+18:01:11.445 INFO  EXECUTION SUCCESS
+18:01:11.447 INFO  Total time: 1:43.305s
+Finished: SUCCESS
